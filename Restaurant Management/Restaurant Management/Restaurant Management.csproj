@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31A0AAA9-216C-429B-B2AF-62DB33EE62D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Restaurant_Management</RootNamespace>
+    <AssemblyName>Restaurant Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationLayer\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\AdminFinancial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\AdminFinancial.Designer.cs">
+      <DependentUpon>AdminFinancial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManageAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManageAdmin.Designer.cs">
+      <DependentUpon>ManageAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManageManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManageManager.Designer.cs">
+      <DependentUpon>ManageManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManagerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManagerDashboard.designer.cs">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManagerFinancial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManagerFinancial.Designer.cs">
+      <DependentUpon>ManagerFinancial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManagerGenarateBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManagerGenarateBill.designer.cs">
+      <DependentUpon>ManagerGenarateBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManageWaiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ManageWaiter.Designer.cs">
+      <DependentUpon>ManageWaiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\OrderWaiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\OrderWaiter.Designer.cs">
+      <DependentUpon>OrderWaiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\Table.designer.cs">
+      <DependentUpon>Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\TakeOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\TakeOrder.Designer.cs">
+      <DependentUpon>TakeOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewCart.Designer.cs">
+      <DependentUpon>ViewCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewMenu.designer.cs">
+      <DependentUpon>ViewMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewOrder.designer.cs">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewTable.designer.cs">
+      <DependentUpon>ViewTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewWaiters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\ViewWaiters.designer.cs">
+      <DependentUpon>ViewWaiters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\WaiterDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\WaiterDashboard.Designer.cs">
+      <DependentUpon>WaiterDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLayer\WaiterMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLayer\WaiterMenu.Designer.cs">
+      <DependentUpon>WaiterMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\DataAccess.cs" />
+    <Compile Include="EntityLayer\AdminEntity.cs" />
+    <Compile Include="EntityLayer\CartEntity.cs" />
+    <Compile Include="EntityLayer\FinancialEntity.cs" />
+    <Compile Include="EntityLayer\ManagerEntity.cs" />
+    <Compile Include="EntityLayer\MenuEntity.cs" />
+    <Compile Include="EntityLayer\TableEntity.cs" />
+    <Compile Include="EntityLayer\UserLoginEntity.cs" />
+    <Compile Include="EntityLayer\WaiterEntity.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryLayer\AdminRepository.cs" />
+    <Compile Include="RepositoryLayer\CartRepository.cs" />
+    <Compile Include="RepositoryLayer\IAdminRepository.cs" />
+    <Compile Include="RepositoryLayer\IManagerRepository.cs" />
+    <Compile Include="RepositoryLayer\IMenuRepository.cs" />
+    <Compile Include="RepositoryLayer\IUserLoginRepository.cs" />
+    <Compile Include="RepositoryLayer\IWaiterRepository.cs" />
+    <Compile Include="RepositoryLayer\ManagerRepository.cs" />
+    <Compile Include="RepositoryLayer\MenuRepository.cs" />
+    <Compile Include="RepositoryLayer\OrderRepository.cs" />
+    <Compile Include="RepositoryLayer\TableRepository.cs" />
+    <Compile Include="RepositoryLayer\UserLoginRepository.cs" />
+    <Compile Include="RepositoryLayer\WaiterRepository.cs" />
+    <Compile Include="ValidationLayer\Validation.cs" />
+    <EmbeddedResource Include="ApplicationLayer\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\AdminFinancial.resx">
+      <DependentUpon>AdminFinancial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ManageAdmin.resx">
+      <DependentUpon>ManageAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ManageManager.resx">
+      <DependentUpon>ManageManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ManagerDashboard.resx">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ManagerFinancial.resx">
+      <DependentUpon>ManagerFinancial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ManagerGenarateBill.resx">
+      <DependentUpon>ManagerGenarateBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ManageWaiter.resx">
+      <DependentUpon>ManageWaiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\OrderWaiter.resx">
+      <DependentUpon>OrderWaiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\Table.resx">
+      <DependentUpon>Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\TakeOrder.resx">
+      <DependentUpon>TakeOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ViewCart.resx">
+      <DependentUpon>ViewCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ViewMenu.resx">
+      <DependentUpon>ViewMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ViewOrder.resx">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ViewTable.resx">
+      <DependentUpon>ViewTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\ViewWaiters.resx">
+      <DependentUpon>ViewWaiters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\WaiterDashboard.resx">
+      <DependentUpon>WaiterDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLayer\WaiterMenu.resx">
+      <DependentUpon>WaiterMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales-manager-icon-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2663725.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-png-icon-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurantfinal5-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApplicationLayer\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApplicationLayer\clipart1005846.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
